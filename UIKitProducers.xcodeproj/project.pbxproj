@@ -18,6 +18,7 @@
 		434465271CAC1B70007C985B /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434465281CAC1B70007C985B /* SignalProducer+Internal.swift */; };
 		4344652B1CAC1B70007C985B /* PrepareForReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344652A1CAC1B70007C985B /* PrepareForReuse.swift */; };
+		4344652D1CAC1B70007C985B /* ControlEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344652C1CAC1B70007C985B /* ControlEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4344651E1CAC1B70007C985B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		434465281CAC1B70007C985B /* SignalProducer+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Internal.swift"; sourceTree = "<group>"; };
 		4344652A1CAC1B70007C985B /* PrepareForReuse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareForReuse.swift; sourceTree = "<group>"; };
+		4344652C1CAC1B70007C985B /* ControlEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				434465051CAC1B70007C985B /* UIKitProducers.h */,
 				434465281CAC1B70007C985B /* SignalProducer+Internal.swift */,
+				4344652C1CAC1B70007C985B /* ControlEvents.swift */,
 				4344652A1CAC1B70007C985B /* PrepareForReuse.swift */,
 				434465071CAC1B70007C985B /* Info.plist */,
 			);
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4344652B1CAC1B70007C985B /* PrepareForReuse.swift in Sources */,
+				4344652D1CAC1B70007C985B /* ControlEvents.swift in Sources */,
 				434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
