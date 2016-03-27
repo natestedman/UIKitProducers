@@ -19,6 +19,7 @@
 		434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434465281CAC1B70007C985B /* SignalProducer+Internal.swift */; };
 		4344652B1CAC1B70007C985B /* PrepareForReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344652A1CAC1B70007C985B /* PrepareForReuse.swift */; };
 		4344652D1CAC1B70007C985B /* ControlEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344652C1CAC1B70007C985B /* ControlEvents.swift */; };
+		4344652F1CAC1B70007C985B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4344652E1CAC1B70007C985B /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		434465281CAC1B70007C985B /* SignalProducer+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Internal.swift"; sourceTree = "<group>"; };
 		4344652A1CAC1B70007C985B /* PrepareForReuse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareForReuse.swift; sourceTree = "<group>"; };
 		4344652C1CAC1B70007C985B /* ControlEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlEvents.swift; sourceTree = "<group>"; };
+		4344652E1CAC1B70007C985B /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				434465281CAC1B70007C985B /* SignalProducer+Internal.swift */,
 				4344652C1CAC1B70007C985B /* ControlEvents.swift */,
 				4344652A1CAC1B70007C985B /* PrepareForReuse.swift */,
+				4344652E1CAC1B70007C985B /* Text.swift */,
 				434465071CAC1B70007C985B /* Info.plist */,
 			);
 			path = UIKitProducers;
@@ -243,6 +246,7 @@
 			files = (
 				4344652B1CAC1B70007C985B /* PrepareForReuse.swift in Sources */,
 				4344652D1CAC1B70007C985B /* ControlEvents.swift in Sources */,
+				4344652F1CAC1B70007C985B /* Text.swift in Sources */,
 				434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
