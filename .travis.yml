@@ -1,0 +1,13 @@
+language: objective-c
+xcode_project: UIKitProducers.xcodeproj
+xcode_scheme: UIKitProducers
+osx_image: xcode7.3
+before_install: true
+install: true
+git:
+  submodules: false
+script:
+  - brew update
+  - brew install carthage
+  - carthage bootstrap --platform ios --no-use-binaries
+  - xctool -sdk iphonesimulator -project UIKitProducers.xcodeproj -scheme UIKitProducers build test
