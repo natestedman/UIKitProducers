@@ -10,6 +10,12 @@
 		434465061CAC1B70007C985B /* UIKitProducers.h in Headers */ = {isa = PBXBuildFile; fileRef = 434465051CAC1B70007C985B /* UIKitProducers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4344650D1CAC1B70007C985B /* UIKitProducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434465021CAC1B70007C985B /* UIKitProducers.framework */; };
 		434465121CAC1B70007C985B /* UIKitProducersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434465111CAC1B70007C985B /* UIKitProducersTests.swift */; };
+		434465201CAC1B70007C985B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */; };
+		434465211CAC1B70007C985B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; };
+		434465231CAC1B70007C985B /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */; };
+		434465241CAC1B70007C985B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; };
+		434465261CAC1B70007C985B /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		434465271CAC1B70007C985B /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +28,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		434465251CAC1B70007C985B /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				434465261CAC1B70007C985B /* ReactiveCocoa.framework in Copy Frameworks */,
+				434465271CAC1B70007C985B /* Result.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		434465021CAC1B70007C985B /* UIKitProducers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitProducers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		434465051CAC1B70007C985B /* UIKitProducers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitProducers.h; sourceTree = "<group>"; };
@@ -29,6 +50,8 @@
 		4344650C1CAC1B70007C985B /* UIKitProducersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitProducersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		434465111CAC1B70007C985B /* UIKitProducersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitProducersTests.swift; sourceTree = "<group>"; };
 		434465131CAC1B70007C985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		4344651E1CAC1B70007C985B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434465201CAC1B70007C985B /* ReactiveCocoa.framework in Frameworks */,
+				434465211CAC1B70007C985B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4344650D1CAC1B70007C985B /* UIKitProducers.framework in Frameworks */,
+				434465231CAC1B70007C985B /* ReactiveCocoa.framework in Frameworks */,
+				434465241CAC1B70007C985B /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +83,7 @@
 				434465041CAC1B70007C985B /* UIKitProducers */,
 				434465101CAC1B70007C985B /* UIKitProducersTests */,
 				434465031CAC1B70007C985B /* Products */,
+				4344651C1CAC1B70007C985B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +112,15 @@
 				434465131CAC1B70007C985B /* Info.plist */,
 			);
 			path = UIKitProducersTests;
+			sourceTree = "<group>";
+		};
+		4344651C1CAC1B70007C985B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */,
+				4344651E1CAC1B70007C985B /* Result.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +162,7 @@
 				434465081CAC1B70007C985B /* Sources */,
 				434465091CAC1B70007C985B /* Frameworks */,
 				4344650A1CAC1B70007C985B /* Resources */,
+				434465251CAC1B70007C985B /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,6 +352,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitProducers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -330,6 +372,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitProducers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -342,6 +388,10 @@
 		4344651A1CAC1B70007C985B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitProducersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.UIKitProducersTests;
@@ -352,6 +402,10 @@
 		4344651B1CAC1B70007C985B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIKitProducersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.UIKitProducersTests;
