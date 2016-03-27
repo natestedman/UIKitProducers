@@ -28,7 +28,7 @@ extension TextSignalProvidingType
 	///
 	/// For underlying behavior and potential side-effects, see the
 	/// documentation for the receiver's implementation of `rac_textSignal`.
-	var textProducer: SignalProducer<String?, NoError>
+	public var textProducer: SignalProducer<String?, NoError>
     {
 		return rac_textSignal().toSignalProducer()
 			.demoteErrors()
