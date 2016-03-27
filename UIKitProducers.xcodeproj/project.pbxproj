@@ -16,6 +16,7 @@
 		434465241CAC1B70007C985B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; };
 		434465261CAC1B70007C985B /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		434465271CAC1B70007C985B /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4344651E1CAC1B70007C985B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434465281CAC1B70007C985B /* SignalProducer+Internal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		434465131CAC1B70007C985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4344651D1CAC1B70007C985B /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4344651E1CAC1B70007C985B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		434465281CAC1B70007C985B /* SignalProducer+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Internal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				434465051CAC1B70007C985B /* UIKitProducers.h */,
+				434465281CAC1B70007C985B /* SignalProducer+Internal.swift */,
 				434465071CAC1B70007C985B /* Info.plist */,
 			);
 			path = UIKitProducers;
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434465291CAC1B70007C985B /* SignalProducer+Internal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +352,7 @@
 		434465171CAC1B70007C985B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -362,12 +367,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.UIKitProducers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		434465181CAC1B70007C985B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
