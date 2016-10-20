@@ -23,7 +23,7 @@ extension UIGestureRecognizer: GestureSignalProvidingType {}
 extension GestureSignalProvidingType
 {
     /// Returns a signal producer that sends the receiver when its gesture occurs.
-    public var gestureProducer: SignalProducer<Self, NoError>
+    public var producer: SignalProducer<Self, NoError>
     {
         return rac_gestureSignal().toSignalProducer()
             .demoteErrors()
